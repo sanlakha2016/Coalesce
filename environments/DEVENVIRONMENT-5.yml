@@ -1,0 +1,14 @@
+fileVersion: 1
+id: "5"
+mappingDefinitions:
+  CONFORMED:
+    database: ARGCON
+    schema: ARGCORTEX
+  LANDING:
+    database: ARGCON
+    schema: TPCH_SF1
+  STAGE:
+    database: ARGCON
+    schema: TPCDS_SF100TCL
+name: DEV ENVIRONMENT
+type: Environment
