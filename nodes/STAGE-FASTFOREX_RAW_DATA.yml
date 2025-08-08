@@ -1,0 +1,130 @@
+fileVersion: 1
+id: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+name: FASTFOREX_RAW_DATA
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: STAGE
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9de6c53b-af51-4f6a-bbb6-1ed1553d67d4
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: ID
+        nullable: false
+        primaryKey: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: effd5fc8-a7bf-420b-8b2f-695dacb1d10e
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: VARCHAR(10)
+        defaultValue: ""
+        description: ""
+        name: BASE_CURRENCY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f76eb6bd-ae00-4330-91df-d52d072bad6f
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: UPDATE_TIMESTAMP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a5dc28de-fd0d-4b69-a71d-a02d897f5934
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: VARIANT
+        defaultValue: ""
+        description: ""
+        name: RAW_DATA
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c771e97-6e22-4c65-8077-80ddaefe4da1
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        defaultValue: ""
+        description: ""
+        name: LOAD_TIMESTAMP
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec9c2f2e-4922-402d-9586-6c062555f1e8
+          stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+        config: {}
+        dataType: VARCHAR(64)
+        defaultValue: ""
+        description: ""
+        name: RECORD_HASH
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: FASTFOREX_RAW_DATA
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

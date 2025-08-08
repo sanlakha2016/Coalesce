@@ -2,13 +2,13 @@ fileVersion: 1
 id: "5"
 mappingDefinitions:
   CONFORMED:
-    database: ARGCON
-    schema: ARGCORTEX
-  LANDING:
-    database: ARGCON
-    schema: TPCH_SF1
+    database: TRAINING_DB1
+    schema: CUSTOMER_ANALYTICS_CONFORMED1
   STAGE:
-    database: ARGCON
-    schema: TPCDS_SF100TCL
+    database: TRAINING_DB
+    schema: CUSTOMER_ANALYTICS_STAGING
+  WAREHOUSE:
+    database: TRAINING_DB
+    schema: CUSTOMER_ANALYTICS
 name: DEV ENVIRONMENT
 type: Environment

@@ -1,0 +1,8 @@
+fileVersion: 1
+id: "2"
+name: Forex_Update
+steps:
+  - 4b119296-f706-480e-bbc4-da119aa59409
+  - c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+  - f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+type: Subgraph

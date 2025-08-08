@@ -1,0 +1,173 @@
+fileVersion: 1
+id: 4b119296-f706-480e-bbc4-da119aa59409
+name: STREAM_FASTFOREX_RAW_DATA
+operation:
+  config:
+    appendOnly: false
+    initialRows: true
+    redeploymentBehavior: Create At Existing Stream
+    sourceType: Table
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: CONFORMED
+  materializationType: stream
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17a38f3f-09f5-4d75-9149-c2ac3c1e3e74
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9de6c53b-af51-4f6a-bbb6-1ed1553d67d4
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f16c37c4-afd1-401c-8d6b-ce6c3fc54069
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: BASE_CURRENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: effd5fc8-a7bf-420b-8b2f-695dacb1d10e
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 32a1335d-2d1f-402b-95f0-1052f175d1ce
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATE_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f76eb6bd-ae00-4330-91df-d52d072bad6f
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: fa690f97-e750-47bf-87c7-ca30881b621b
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: VARIANT
+        description: ""
+        name: RAW_DATA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a5dc28de-fd0d-4b69-a71d-a02d897f5934
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c1194fa8-d241-4b42-9fc6-2a8d6bfa4829
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOAD_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3c771e97-6e22-4c65-8077-80ddaefe4da1
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 146133e1-de18-4d97-be17-e451c240ad86
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: RECORD_HASH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ec9c2f2e-4922-402d-9586-6c062555f1e8
+                stepCounter: c5bb4f3e-4ee3-467e-af4e-e94f25b71bfd
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 88e94c54-aeed-4539-8fc5-4be35aeba165
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        metadataAction: true
+        name: METADATA$ACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60f7e91d-8923-42ac-85d1-91b60a0da75d
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: boolean
+        defaultValue: ""
+        description: ""
+        metadataIsUpdate: true
+        name: METADATA$ISUPDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d9b555d-daf1-41a3-9532-b9f6dd9c120b
+          stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        metadataRowID: true
+        name: METADATA$ROW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: STAGE
+            nodeName: FASTFOREX_RAW_DATA
+        join:
+          joinCondition: FROM {{ ref('STAGE', 'FASTFOREX_RAW_DATA') }} "FASTFOREX_RAW_DATA"
+        name: STREAM_FASTFOREX_RAW_DATA
+        noLinkRefs: []
+  name: STREAM_FASTFOREX_RAW_DATA
+  overrideSQL: false
+  schema: ""
+  sqlType: Streams:::153
+  type: sql
+  version: 1
+type: Node

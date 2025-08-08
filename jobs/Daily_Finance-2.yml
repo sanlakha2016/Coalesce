@@ -1,0 +1,6 @@
+excludeSelector: ""
+fileVersion: 1
+id: "2"
+includeSelector: "{ subgraph: \"Forex_Update\" }"
+name: Daily_Finance
+type: Job

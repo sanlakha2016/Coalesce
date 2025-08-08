@@ -1,0 +1,2446 @@
+fileVersion: 1
+id: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+name: STG_FASTFOREX_RAW_DATA
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: CONFORMED
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c2087557-c6c7-4ee0-ba1d-9082e02aa9a9
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: ID
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 17a38f3f-09f5-4d75-9149-c2ac3c1e3e74
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c7eed0f-a093-427e-a181-e7074daa4583
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: VARCHAR(10)
+        description: ""
+        name: BASE_CURRENCY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: f16c37c4-afd1-401c-8d6b-ce6c3fc54069
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 423a87ba-6eeb-469c-97f4-825c96eb2edc
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: UPDATE_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 32a1335d-2d1f-402b-95f0-1052f175d1ce
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 788850f9-514a-4f0b-87d3-d53c7106845c
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: STRING
+        description: ""
+        name: base
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"base\"::STRING"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9089bc11-e443-46dd-b34e-9f01f33d775b
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: ms
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"ms\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b88ae1c-da21-4552-b02e-a38bdcfce67c
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AED
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AED\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d39eb14-cfcd-435e-a7f1-40a0b42ed361
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AFN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AFN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fe8d4b3e-5680-4350-b8ab-180a02a58177
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ALL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ALL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60191678-c44a-4a7e-806f-882c1add7054
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AMD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AMD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0f181d60-4fe4-4c29-8a47-11b01c01f95e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ANG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ANG\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b57a1003-66c5-46f5-80b7-7c5b1698f183
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AOA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AOA\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3a5f2192-2e7e-4ca3-98aa-e2f604740ea8
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ARS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ARS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 866a3fe7-16a5-4874-bef2-481722eaa8b4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AUD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AUD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9036ac21-2144-4f2b-a0bc-675f33ae2015
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AWG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AWG\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5e0ac492-9ad2-4cff-b8aa-34352dc64f11
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_AZN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"AZN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23cba64f-d659-4de4-abd0-d1c8169bbb64
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BAM
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BAM\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8365525b-48a7-4ca4-a52d-4af10a7d6e45
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BBD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BBD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d809bccf-d0b7-4820-b2f5-2d8b711a6418
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BDT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BDT\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0700fe7d-9fe7-40a1-a4da-fe2107948e48
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BGN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7269c3ff-2746-4bda-9a35-9dd99ddf42d8
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BHD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BHD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ebd17550-fefe-4132-b929-3b747dfe83d0
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BIF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BIF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e5ef33b-95f7-4d3f-bafc-cf09f566f85e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BMD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BMD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c6ac616-c350-4492-be33-309648827e3b
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BND\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8956a45e-4377-4212-af46-2c87e961e163
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BOB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BOB\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4aad999-eb01-427c-a370-98b98c7d2195
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BRL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BRL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c39776e6-0b75-4d60-a2f1-468e935c14da
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BSD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BSD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b740bff2-5a1d-469f-8c4d-b03f9a9e4072
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BTN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BTN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e962c15f-21fe-4f86-ba8b-24cbe20c6061
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BWP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BWP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d0cd607-ccd6-46e3-9d10-278a323e0de6
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_BZD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"BZD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6b34a9de-fe66-43a3-a14b-58ffe8667cfc
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CAD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CAD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 69ec0aa8-df08-48f6-910e-fd5044ce80a4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CDF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CDF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d2cfc1c-3596-4a82-b62d-8cf1316537fe
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CHF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CHF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a0c22806-eaec-42c1-9bcf-31de68a35e0b
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CLF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CLF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 11b61d40-3736-400e-8404-136975ca4db0
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CLP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CLP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aa7e2358-b1f6-45e0-9dd2-ed54b022b6ba
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CNH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CNH\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b828c77-e4f4-40ce-b057-a0a720cd5c2c
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CNY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CNY\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ce7d8af9-fa51-464e-886c-4df189812283
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_COP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"COP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4a83b371-8e1b-4ec6-b430-4a06765b4a8f
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CUP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CUP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 00b76e2d-0dc6-4c1a-b5fc-6283f49315a0
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CVE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CVE\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b810d799-37ed-4a59-9242-729060f88b06
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_CZK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"CZK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 166ff854-ecf7-4113-8972-2c4b5a2ce322
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_DJF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"DJF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: da5b0303-9e2c-42c7-b292-284b76cde9c3
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_DKK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"DKK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 468ff896-7c5c-40d0-8c6b-f2bbe8c484b4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_DOP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"DOP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b046af63-e21f-4de4-b8f8-82195d7f523a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_DZD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"DZD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3563a30-2c6a-4e84-b58b-28b6d6c59965
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_EGP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"EGP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 76fcb9b3-bdfb-4656-809a-2d24a822e7e9
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ERN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ERN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e2ceea75-cb38-4b1b-a8a3-1f618c6bfb08
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ETB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ETB\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 55da2d09-0a84-49b5-948e-1545985abb6d
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_EUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"EUR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5146e286-fd7a-49e7-a698-033c9e391287
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_FJD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"FJD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d3897b69-5545-440c-80c1-d7a8c7875f54
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_FKP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"FKP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87115d2e-f68f-4c8f-97c8-eabd5c86697e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GBP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GBP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4580c74f-6d52-478d-9e9e-b24414f3d5d9
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GEL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GEL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7f3c7500-dc8e-49b2-86a3-e3b14e5828af
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GHS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GHS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 595f9ffd-012d-4d6d-ad48-b46cd9b4f001
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GIP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GIP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8b5dd82-c02d-449b-8c39-5bc740c5c0c7
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GMD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GMD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c8a4432f-7c65-4401-a02c-3ad44fe35800
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GNF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GNF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d44e79f0-6d74-4c4f-8c2c-1725c782b0ba
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GTQ
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GTQ\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dda8868c-2e00-449b-a40b-04eeb9de5ba5
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_GYD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"GYD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 411b67fc-9a29-47c9-a6ae-18cbccc95560
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_HKD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"HKD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9fb5c435-c4d6-426b-9a7e-604f6cd4add6
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_HNL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"HNL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2116b11d-8747-40ad-bab8-58f1ac987b08
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_HRK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"HRK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 164c4260-808f-456e-a4a5-1968cbe88221
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_HTG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"HTG\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1c32a1a2-047d-4117-8b8d-8fc7eaf47128
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_HUF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"HUF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b22f45ac-f993-41db-9f1d-3446e455a646
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_IDR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"IDR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d7c0cfe-fadc-4bf4-8444-a3211e040170
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ILS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ILS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f80216dc-f267-4d7f-bfe6-e5de58ddd718
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_INR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"INR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5d3693a-e2d2-44f5-a515-cf0d66d6494a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_IQD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"IQD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 97648cfb-a536-4235-b603-523525d811d7
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_IRR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"IRR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9f1e9061-416d-4e7b-a6d4-8c851ceb9c01
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ISK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ISK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 67356792-9b4b-40db-99e9-263f82d675b3
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_JMD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"JMD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a26bf2d-f272-4d7b-801c-5a381d5d5917
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_JOD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"JOD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5d1c8438-8005-4709-83ae-80761f8fd826
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_JPY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"JPY\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 344c568d-8b9b-42c5-9d8a-5241103a67fc
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KES
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KES\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8d77b385-f6d6-4408-a51a-da90b4f3f0d6
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KGS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KGS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: def40429-230b-4798-914a-2880423496cf
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KHR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KHR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 910cf29d-35b7-40b2-abae-eceeb153f1dd
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KMF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KMF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6575a836-d460-425c-9814-0e8f9f904072
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KPW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KPW\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db476b08-609f-430d-9c6d-f3d91a8abe6f
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KRW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KRW\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e81c05fa-9893-42b1-b3dc-814f0177c5a2
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KWD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KWD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d916bb25-0afe-44a0-a0f3-7f0c5ef2ef92
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KYD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KYD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b629ee13-499a-40f4-9b91-08fd851e3efa
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_KZT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"KZT\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4fb20b65-a1ca-453d-bff1-8bcbd3984302
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LAK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LAK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7c8c1819-3c4c-4e86-be43-b09c31d73af2
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LBP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LBP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3512bed9-1c37-4177-9a85-bea39f22c8c9
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LKR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LKR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64fced8d-4c3d-4845-b748-9bc48584db10
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LRD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LRD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dc6dbf05-e937-400f-b841-48c3c3995f16
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LSL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LSL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bc46419-a588-4159-8fe3-121fc8871c1d
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_LYD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"LYD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e241ccf9-db73-4173-8fc1-d3161f9c4257
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MAD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MAD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1579fb82-2214-4e0e-af53-8939f92ca39b
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MDL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MDL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 23f03e02-b5d7-4df6-97e2-9e48b2815caf
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MGA
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MGA\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cb740be-fe59-44fe-a97c-9802988e7715
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MKD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MKD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d545a4c-a77c-479c-8534-4af5eb2c08aa
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MMK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MMK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: daea901a-644f-4eee-b2d1-d95d96687f8a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MNT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MNT\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 49e41c14-79e0-4994-813c-842c7b519e22
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MOP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MOP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fc3e4e72-1ce6-4cdd-95f8-11923e858984
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MRU
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MRU\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 350859c2-e790-4db8-b06b-2cf09f537dcb
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MUR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MUR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6a215e7d-c684-45d5-b0bf-b2018690a983
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MVR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MVR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 87612a24-b4e9-4459-b490-73a716fa2611
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MWK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MWK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 47336d7f-91e5-489f-b8b1-321993befb66
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MXN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MXN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2328c787-6c81-4d74-abfd-c42be7f4e9a7
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MYR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MYR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2750efd2-6860-4cf0-bd1e-152503c834e7
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_MZN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"MZN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1fc49c04-a253-4021-a051-bd875d6370b8
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_NAD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"NAD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 59b1755b-ee20-446d-8b63-0ca695b4e626
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_NGN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"NGN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04de6662-00cc-4b57-becc-aee8636df50a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_NOK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"NOK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5b6c77fc-05eb-40c1-9bf7-1374df10fe09
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_NPR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"NPR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8880cf43-fdf2-4f77-9cbb-25db0c4eabf3
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_NZD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"NZD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1e0fcafa-e161-4417-85da-ed86deb99afa
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_OMR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"OMR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec140962-8eb3-4eda-a000-678b90287b39
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PAB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PAB\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8936e6fe-e4b9-4b24-8c2b-8fadaaaf00e5
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PEN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PEN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8aaa6f3d-9ad2-4bf4-b65d-c669d75a2819
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PGK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PGK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2221156-3833-4738-9730-df792f3cb2da
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PHP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PHP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b2c62cf5-3b21-475f-a729-482a5b8facde
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PKR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PKR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d0ad9452-a402-4344-b500-20c62946189a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PLN
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PLN\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5bc51334-ee68-428b-9380-f0d640010680
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_PYG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"PYG\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: bc94223b-56c3-4d2d-b3b7-d7607f1d1742
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_QAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"QAR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b45cb66d-8b51-4978-9072-61047a4b8fa0
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_RON
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"RON\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2032378b-c61e-4121-a983-d24d408035bd
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_RSD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"RSD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65766392-5707-4094-9deb-949c9ab37d98
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_RUB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"RUB\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2a12f45a-6a5d-4c74-bba4-fc23f2dc99cf
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_RWF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"RWF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c69391c-6254-4f4a-8b72-cc913d3fdb3e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SAR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 420de124-c6d7-450f-9210-fa88bfae1af1
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SCR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SCR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1d4a2c4d-30a3-40d5-b230-d83667485020
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SDG
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SDG\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b96f83e8-f644-4e73-84d7-c817f811da05
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SEK
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SEK\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fb91f791-f70b-4cff-8a0f-c8fdb345a272
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SGD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SGD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f81df065-09bd-487d-9ad6-0f92119bbdb2
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SHP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SHP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f3d462e-a8a8-42ef-8d76-b63ae8104257
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SLL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SLL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5eed9a5-4b3f-48bb-b0fb-c9b2e4b0d1f6
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SOS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SOS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 08e4ed22-687d-488c-96d6-41daf8320080
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SRD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SRD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6d58452f-02b8-42f7-b5ef-fc554eed7060
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SYP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SYP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f2ae0d57-db9a-4fca-9173-5be601e285c4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_SZL
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"SZL\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 14b84b5f-761a-4a16-b67f-e6062ea0b87e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_THB
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"THB\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: db38361f-1402-4f96-802e-5edf107ac4f9
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TJS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TJS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8da13f4e-c667-4256-aa99-f1e7a6a60189
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TMT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TMT\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d5c1e48c-8232-45e7-ac45-6bfcb5fdd1dc
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TND\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46ceee6f-7f4c-4a7b-87fc-97284c73fdbe
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TOP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TOP\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9e1f0f0-6504-4bcb-8a40-d91e7cdb3565
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TRY\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 1b364987-4761-4d32-ba2a-afaa7a08ace4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TTD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TTD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c75fff8d-24a8-4082-8aeb-0b926a29c631
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TWD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TWD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 958cfbf4-9447-4dd2-8cd3-d3f49c5f17b8
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_TZS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"TZS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 29dca481-5245-4a03-b5f0-3efa9b0e7d0b
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_UAH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"UAH\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 089369df-a2bb-4f99-924e-8faf431bbd89
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_UGX
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"UGX\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6cdedf84-2f1f-45da-839b-d66ac3b67d42
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_USD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"USD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c6c0f92d-c65a-45ae-bd2a-f137a6731c65
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_UYU
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"UYU\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 612d4f18-5c27-4d99-9a70-0febc4619fd3
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_UZS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"UZS\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 909ede37-00db-4b26-b7b0-a31dd052914e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_VND
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"VND\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5484dd2-29c6-4c61-b09c-33487665c4f1
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_VUV
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"VUV\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 45a7f867-4c6b-4d24-a237-0b30c15636e4
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_WST
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"WST\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 95fb9dfb-9395-4860-aa04-5471b5f2f74e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_XAF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"XAF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b8c4f8e-017c-42f2-beb0-4ce300da80b5
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_XCD
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"XCD\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 16a406c6-d928-4924-bb88-97ba79a6ae6a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_XDR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"XDR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 645e7c72-162e-4be6-a15a-402b03c3be34
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_XOF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"XOF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dd43d6e0-6200-4441-a19c-90e872cb1ccf
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_XPF
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"XPF\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c0b4efb8-2663-46bf-97d7-5026e395d862
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_YER
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"YER\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2c8b3691-af5c-4469-810c-4f69e9a9bb24
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ZAR
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ZAR\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 13aa700c-02cc-4bcb-8496-009562e20564
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: DOUBLE
+        description: ""
+        name: results_ZMW
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"results\".\"ZMW\"::DOUBLE"
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6bd34cdf-18fd-4319-8446-f1fed7f2796e
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: STRING
+        description: ""
+        name: updated
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: "\"STREAM_FASTFOREX_RAW_DATA\".\"RAW_DATA\":\"updated\"::STRING"
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0e1a1c0a-84d1-475a-a08d-e398a1025622
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: TIMESTAMP_NTZ(9)
+        description: ""
+        name: LOAD_TIMESTAMP
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c1194fa8-d241-4b42-9fc6-2a8d6bfa4829
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f7046987-c35e-4b0a-b5f3-a45645bfa6e1
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: VARCHAR(64)
+        description: ""
+        name: RECORD_HASH
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 146133e1-de18-4d97-be17-e451c240ad86
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5c6579b9-fa22-4f72-97a0-e9b926452a9a
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: STRING
+        description: ""
+        name: METADATA$ACTION
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 88e94c54-aeed-4539-8fc5-4be35aeba165
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0335b9f8-c30b-4b11-a9b9-f90fd3e4f0bd
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: boolean
+        description: ""
+        name: METADATA$ISUPDATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 60f7e91d-8923-42ac-85d1-91b60a0da75d
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 19d1a5b8-2842-4cad-bba2-8e71da616c6d
+          stepCounter: f1d0df70-d2ed-4561-9b8e-0e7f70eaf9e7
+        config: {}
+        dataType: STRING
+        description: ""
+        name: METADATA$ROW_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 3d9b555d-daf1-41a3-9532-b9f6dd9c120b
+                stepCounter: 4b119296-f706-480e-bbc4-da119aa59409
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases: {}
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: CONFORMED
+            nodeName: STREAM_FASTFOREX_RAW_DATA
+        join:
+          joinCondition: FROM {{ ref('CONFORMED', 'STREAM_FASTFOREX_RAW_DATA') }} "STREAM_FASTFOREX_RAW_DATA"
+        name: STG_FASTFOREX_RAW_DATA
+        noLinkRefs: []
+  name: STG_FASTFOREX_RAW_DATA
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
